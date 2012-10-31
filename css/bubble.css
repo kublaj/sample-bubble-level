@@ -1,0 +1,163 @@
+/*
+ * Copyright (c) 2012, Intel Corporation
+ * File revision: 31 October 2012
+ * Please see http://software.intel.com/html5/license/samples 
+ * and the included README.md file for license terms and conditions.
+ */
+ 
+body {
+    background-color:white;
+}
+
+
+#block {
+    width:400px;
+    height:400px;
+    display:block;
+    position:absolute;
+    padding:0px;
+    background-color:white;
+}
+
+
+/************** panels part **************/
+
+/* gradient background for all panels*/
+.gradient {
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.26, rgb(249,146,191)),
+    	color-stop(0.63, rgb(255,176,230)),
+    	color-stop(0.82, rgb(255,212,255))
+    );
+}
+
+/*general class for all panels*/
+.panel {
+    border:2px solid black;
+    position:relative;
+    overflow:hidden;
+    margin:0px;
+    padding:0px;
+}
+
+
+.panel_circle {
+    border-radius:400px;
+    width:396px;
+    height:396px;
+    -webkit-box-shadow: 0px 0px 50px 5px #777;
+    -moz-box-shadow: 0px 0px 50px 5px #777;
+    box-shadow: 0px 0px 50px 5px #777;
+    overflow:hidden;
+}
+
+.panel_bar {
+    width:396px;
+    height:60px;
+    top:166px;
+    border-radius: 5px;
+}
+
+#shadow {
+    width:396px;
+    height:60px;
+    top:170px;
+    position:relative;
+    background-image:url(shadow.svg);
+    margin:0px;
+    padding:0px;
+}
+
+.shadow_bar {
+    display:block;
+}
+.shadow_circle {
+    display:none;
+}
+
+
+/************** center part *******************/ 
+
+.center {
+    opacity:0.99;
+    position:relative;
+/*    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    vertical-align: middle; */
+    width:58px;
+    left:170px;
+    z-index:200;
+}
+
+.center_circle {
+    border-radius:60px;
+    top:170px;
+    border:2px solid black;
+    height:58px;
+}
+
+.center_bar {
+    top: 0px;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    height:60px;
+}
+
+.info {
+    color: black;
+/*    background-color:lightgrey;*/
+    font-size:x-large;
+    width:100px;
+    height:auto;
+    position: absolute;
+    opacity:0.5;
+    right:1px;
+    z-index:1000;
+    display: none;
+}
+
+/************ bubble part *************/
+
+#bubble {
+    position:absolute;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    background-color:white;
+    opacity:0.5;
+    z-index:100;
+}
+
+/*********** angle part ************/
+
+.angle {
+    position:absolute;
+    height:60px;
+    width: 100px;
+    left:150px;
+    top:150px;
+    padding:0;
+    margin:0;
+    color:gray;
+    text-align:center;
+    font-weight: bold;
+    z-index:500;
+}
+
+.angle_center {
+    display:none;
+}
+
+.angle_bar {
+    left:50px;
+    top:-7px;
+    font-size:60px;
+    display: block;
+}
+
