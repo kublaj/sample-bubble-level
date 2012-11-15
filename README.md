@@ -10,6 +10,11 @@ License Information Follows
 * css/bubble.css
 * js/accelerometer.js
 * js/bubble.js
+* app.json
+* config.xml
+* icon.png
+* README.md
+* screenshot.png
 
 Copyright (c) 2012, Intel Corporation
 
@@ -51,7 +56,7 @@ Copyright (c) 2012, jQuery Foundation and other contributors.
 
 Cordova (PhoneGap) Library
 --------------------------
-* js/cordova-2.0.0.js
+* cordova.js
 
 * source:  http://www.phonegap.com/
 * license:  http://www.apache.org/licenses/LICENSE-2.0.html
