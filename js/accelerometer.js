@@ -26,8 +26,14 @@ function onDeviceReady() {
 }
 
 function onSuccess(acceleration) {
-       var x = acceleration.x;
-        var y = acceleration.y;
+    //   There is differences in axis directions on real devices
+    //         and in Device Emulator
+    //  For Device emulator use
+        var x = -acceleration.x;
+        var y = -acceleration.y;
+    //  For device build use next statements
+    //  var x = acceleration.x;
+    //  var y = acceleration.y;
         var z = acceleration.z;
         var valuex= (x * FILTERFACTOR) + (previous_parameters.x * (1.0 - FILTERFACTOR));
         previous_parameters.x = valuex;
