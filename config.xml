@@ -8,7 +8,7 @@
   --> 
   <name>Bubble Level</name> 
   <content src="index.html" /> 
-  <icon src="sample_icon.png" /> 
+  <icon src="icon.png" /> 
   <description>Bubble Level is demo how to use accelerometer API</description> 
   <author href="http://software.intel.com/html5">Intel Corporation</author> 
 <!--  leave out to get latest PhoneGap, otherwise specify a value 
